@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.armando.toledoclickcounter.MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Counter"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintVertical_bias="0.113"
+        tools:layout_constraintBottom_creator="1" />
+
+    <TextView
+        android:id="@+id/txtDisplayCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="text"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="@+id/editText"
+        app:layout_constraintRight_toLeftOf="@+id/btnCounter"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/btnCounter"
+        android:layout_width="96dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:elevation="0dp"
+        android:onClick="clickAction"
+        android:text="COUNTER"
+        app:layout_constraintBottom_toTopOf="@+id/txtDisplayCount"
+        app:layout_constraintRight_toRightOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="@+id/txtDisplayCount"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickClear"
+        android:text="clear"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+</android.support.constraint.ConstraintLayout>
